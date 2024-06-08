@@ -35,7 +35,7 @@ const Admins = () => {
       setCurrentPage(data.currentPage);
       setTotalPages(data.totalPages);
     } catch (error) {
-      setError(error.response.data.message); // Set error message
+      setError(error.response.data.message); 
     }
   };
 
@@ -51,7 +51,7 @@ const Admins = () => {
       toast.success("Admin deleted successfully");
       fetchAdmins(currentPage);
     } catch (error) {
-      toast.error(error.response.data.message); // Set error message
+      toast.error(error.response.data.message); 
     }
   };
 

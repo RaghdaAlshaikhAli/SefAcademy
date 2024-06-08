@@ -1,5 +1,3 @@
-// import React from "react";
-// import not from "/dashboard/public/not.gif";
 import "./style.css";
 
 const NotFound = () => {

@@ -11,7 +11,7 @@ const Counter = () => {
   const lastItemControls = useAnimation();
   const counterRef = useRef(null);
   const lastItemRef = useRef(null);
-  const hasAnimated = useRef(false); // To ensure the animation runs only once
+  const hasAnimated = useRef(false);
 
   useEffect(() => {
     const observer = new IntersectionObserver(

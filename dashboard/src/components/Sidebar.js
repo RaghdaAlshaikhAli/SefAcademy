@@ -76,7 +76,6 @@ const Sidebar = () => {
         style={!isAuthenticated ? { display: "none" } : { display: "flex" }}
       >
         <GiHamburgerMenu className="hamburger" onClick={() => setShow(!show)} />
-        {/* <ToastContainer/> */}
       
       </div>
     </>

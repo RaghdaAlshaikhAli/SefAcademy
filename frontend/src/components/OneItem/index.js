@@ -1,5 +1,4 @@
 import React from "react";
-// import'./style.scss'
 
 const OneItem = ({ title, title2, img, backgroundColor }) => {
   return (

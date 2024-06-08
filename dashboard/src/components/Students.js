@@ -44,7 +44,7 @@ const Students = () => {
         withCredentials: true,
       });
       toast.success("Student deleted successfully");
-      fetchStudents(currentPage); // جلب البيانات الحديثة
+      fetchStudents(currentPage);
     } catch (error) {
       toast.error(error.response.data.message);
     }
@@ -62,7 +62,7 @@ const Students = () => {
       setStudents(students.map(student => student.userId === studentId ? editStudent : student));
       setEditStudent(null);
       toast.success("Student updated successfully");
-      fetchStudents(currentPage); // جلب البيانات الحديثة
+      fetchStudents(currentPage); 
     } catch (error) {
       toast.error(error.response.data.message);
     }

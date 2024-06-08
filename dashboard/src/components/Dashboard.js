@@ -3,7 +3,6 @@ import { useContext, useEffect, useState } from "react";
 import { Context } from "../index";
 import { Navigate } from "react-router-dom";
 import { toast } from "react-toastify";
-// import "react-toastify/dist/ReactToastify.css";
 
 const Dashboard = () => {
   const [requests, setRequests] = useState([]);
@@ -163,7 +162,6 @@ const Dashboard = () => {
           <h2>No Requests!</h2>
         )}
       </div>
-      {/* <ToastContainer /> */}
     </section>
   );
 };

@@ -103,60 +103,6 @@ export const addNewStudent = catchAsyncErrors(async (req, res, next) => {
   });
 });
 
-
-// // Get All Students
-// export const getAllStudents = catchAsyncErrors(async (req, res, next) => {
-//   const { page = 1, limit = 50, search = "", filter = "", sort = "" } = req.query;
-//   const query = { role: "Student" };
-
-//   if (search) {
-//     query.Name = { $regex: search, $options: "i" };
-//   }
-
-//   if (filter) {
-//     query.current_Cycle =  { $regex: filter, $options: "i" };;
-//   }
-
-//   let sortOptions = {};
-//   switch (sort) {
-//     case "name_asc":
-//       sortOptions = { Name: 1 };
-//       break;
-//     case "name_desc":
-//       sortOptions = { Name: -1 };
-//       break;
-//     case "mark_asc":
-//       sortOptions = { mark: 1 };
-//       break;
-//     case "mark_desc":
-//       sortOptions = { mark: -1 };
-//       break;
-//     case "rank_asc":
-//       sortOptions = { rank: 1 };
-//       break;
-//     case "rank_desc":
-//       sortOptions = { rank: -1 };
-//       break;
-//     default:
-//       break;
-//   }
-
-//   const totalStudents = await User.countDocuments(query);
-//   const students = await User.find(query)
-//     .sort(sortOptions)
-//     .skip((page - 1) * limit)
-//     .limit(limit);
-
-//   const totalPages = Math.ceil(totalStudents / limit);
-
-//   res.status(200).json({
-//     success: true,
-//     currentPage: parseInt(page),
-//     totalPages,
-//     students,
-//   });
-// });
-
 export const getAllStudents = catchAsyncErrors(async (req, res, next) => {
   const { page = 1, limit = 50, search = "", filter = "", sort = "" } = req.query;
   const query = { role: "Student" };

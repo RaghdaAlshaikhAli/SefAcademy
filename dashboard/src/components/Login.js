@@ -1,72 +1,4 @@
-// import { useContext, useState } from "react"; 
-// import { Navigate, useNavigate } from "react-router-dom";
-// import { Context } from "../index";
-// import axios from "axios";
-// import { toast , ToastContainer} from "react-toastify";
-
-// const Login = () => {
-//   const [userId, setUserId] = useState("");
-//   const [password, setPassword] = useState("");
-//   const [role, setRole] = useState("SuperAdmin");
-
-//   const { isAuthenticated, setIsAuthenticated } = useContext(Context);
-
-//   const navigateTo = useNavigate();
-
-  // const handleLogin = async (e) => {
-  //   e.preventDefault();
-  //   try {
-  //     await axios
-  //       .post(
-  //         "http://localhost:4000/api/v1/users/login",
-  //         { userId, password, role },
-  //         {
-  //           withCredentials: true,
-  //           headers: { "Content-Type": "application/json" },
-  //         }
-  //       )
-  //       .then((res) => {
-  //         toast.success(res.data.message);
-  //         setIsAuthenticated(true);
-  //         navigateTo("/");
-  //         setUserId("");
-  //         setPassword("");
-  //         setRole("");
-  //       });
-  //   } catch (error) {
-  //     toast.error(error.response.data.message);
-  //   }
-  // };
-
-  // const handleLogin = async (e) => {
-  //   e.preventDefault();
-  //   try {
-  //     const res = await axios.post(
-  //       "http://localhost:4000/api/v1/users/login",
-  //       { userId, password, role },
-  //       {
-  //         withCredentials: true,
-  //         headers: { "Content-Type": "application/json" },
-  //       }
-  //     );
-  
-  //     toast.info(res.data.message);
-  //     setIsAuthenticated(true);
-  //     setUserId("");
-  //     setPassword("");
-  //     setRole("");
-  //     navigateTo("/");
-  //   } catch (error) {
-  //     toast.error(error.response.data.message);
-  //   }
-  // };
-  
-  // if (isAuthenticated) {
-  //   return <Navigate to={"/"} />;
-
-  // }
-
-  import { useContext, useState } from 'react';
+import { useContext, useState } from 'react';
 import { Navigate, useNavigate } from 'react-router-dom';
 import { Context } from '../index';
 import axios from 'axios';
@@ -124,7 +56,7 @@ const Login = () => {
           <input
             type="password"
             placeholder="Password"
-            value={password} // تأكد من استخدام 'password'
+            value={password} 
             onChange={(e) => setPassword(e.target.value)}
           />
           <select value={role} onChange={(e) => setRole(e.target.value)}>
@@ -135,7 +67,6 @@ const Login = () => {
             <button type="submit">Login</button>
           </div>
         </form>
-      {/* <ToastContainer/> */}
       </section>
     </>
   );

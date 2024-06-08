@@ -38,7 +38,6 @@ const AddNewStudent = () => {
 
       toast.success(res.data.message);
       setIsAuthenticated(true);
-      // إزالة التوجيه إلى الصفحة الرئيسية
       setName("");
       setEmail("");
       setPhone("");

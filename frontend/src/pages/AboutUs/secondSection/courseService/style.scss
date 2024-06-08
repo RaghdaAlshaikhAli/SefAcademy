@@ -1,0 +1,44 @@
+.grid-item img {
+  max-width: 100%;
+  height: auto;
+}
+.grid-item {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  text-align: center;
+}
+
+.grid-item h2 {
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.grid-item p {
+  margin: 5px 0;
+  font-size: 16px;
+  color: #666;
+}
+
+.together{
+  background-color: transparent !important;
+  border: transparent;
+  padding: 10px !important;
+}
+.together h2{
+  color: #FFB606;
+  font-size: 22px;
+  padding: 15px;
+  font-weight: 400;
+}
+
+.together p{
+  color: #ACABAB;
+  font-size: 14px !important;
+}
+@media (max-width:320px) {
+    
+  .grid-item p{
+    font-size: 65% !important;
+  }
+}

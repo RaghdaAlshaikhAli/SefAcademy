@@ -1,0 +1,16 @@
+.LogoApp {
+  width: 30%;
+  .logo {
+    width: 40%;
+    height: 40%;
+    color: #000;
+  }
+  span {
+    color: #000;
+  }
+}
+@media (max-width: 450px) {
+  .logo{
+    width: 50% !important;
+  }
+}

@@ -1,0 +1,32 @@
+.grid-container3 {
+    display: flex;
+    width: 80%;
+    margin: auto;
+}
+
+.image-container{
+    position: relative;
+}
+.text-container{
+    margin-left: 40px;
+  }
+  .text-container h2{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+  .text-container p{
+    color: #999;
+    font-size: 14px;
+    padding: 3% 0;
+  }
+
+  @media (max-width: 400px) {
+    .grid-container3 {
+      flex-direction: column;
+    }
+    .text-container{
+      margin-left: 0px !important;
+    }
+  }

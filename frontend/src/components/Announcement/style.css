@@ -1,0 +1,31 @@
+
+.Announcement_Container{
+  color: #ababab;
+  background-color: #131313;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 10px 0;
+  line-height: 1.4em;
+}
+
+.Announcement_Container .contact_a{
+  margin: 0 5%;
+  display: block;
+}
+.Announcement_Container .a_div:hover {
+  color: #ffb606;
+}
+
+.contact_div_hed{
+  display: flex;
+  margin: 5px 10px !important;
+}
+
+@media (max-width: 1024px) {
+  .contact_a2{
+    display: none !important;
+  }
+}

@@ -1,0 +1,71 @@
+.slider{
+  width: 80%;
+  margin: auto;
+}
+.button_Contact{
+  background-color: #5EBB3E !important;
+  border: none !important;
+  padding: 2.5% 6%;
+  border-radius: 6px !important;
+  text-align: left;
+}
+.iconContact{
+  height: 70px !important;
+}
+.First_button_Contact{
+  width: 100% !important;
+}
+.contact_support{
+  margin-top: 0 !important;
+  color: #d5f0d9 !important;
+  font-size: 12px !important;
+}
+.button_content{
+  margin-left: 10px;
+}
+.WhatsApp_p{
+  color: #fff !important;  
+  font-size: 80%;
+    font-weight: 600;
+}
+.customer_contact{
+  width: 35px !important;
+}
+.span_contact{
+  background-color: #62c971;
+  border-radius: 5px;
+  color: hsla(0, 0%, 100%, .98);
+  font-size: 9px;
+  margin-left: 3px;
+  padding: 2px 4px;
+}
+.grid-item-contact{
+  background-color: transparent !important;
+  border-radius: 15px;
+  border: 1px solid #FFB606; 
+  color: #fff;
+}
+@media (max-width: 1000px) {
+  .button_Contact{
+    width: 80% !important;
+    margin: 3% auto;
+  }
+}
+.Contact_img_tel{
+  width: 13px;
+}
+.cairo{
+  color: #fff !important;
+  font-size: 25px !important;
+}
+.icon_title{
+  color: #FFB606;
+  font-size: 25px !important;
+  margin: 7% 0;
+}
+.contact_div{
+  margin: 5px 0;
+}
+.contact_a{
+  margin: 0 8px;
+}

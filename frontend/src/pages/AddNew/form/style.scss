@@ -1,0 +1,75 @@
+.new-form-container {
+  width: 80%;
+  margin: 100px auto;
+  padding: 3%;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  background-color: #F0F0F0;
+}
+
+.new-form-containerr {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5%; 
+}
+
+@media (max-width: 1000px) {
+  .new-form-containerr {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1%;
+  }
+}
+.form-groupp {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5%;
+}
+
+.form-groupp input, select {
+  width: 100%;
+  padding: 2%;
+  margin: 1% 0;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-sizing: border-box;
+  line-height: 1.3;
+}
+.form-groupp span {
+  color: #666;
+  font-size: 12px;
+}
+.form-groupp label {
+  color: #3f4b5b;
+  font-size: 15px;
+}
+
+.div-submit{
+  text-align: center;
+}
+button {
+  color: #fff;
+  font-size: 15px;
+  width: auto;
+  background-color: #579af6;
+  cursor: pointer;
+  border-radius: 4px;
+  box-shadow: 0 1px #eee;
+  margin: 10px;
+  padding: 20px;
+  border: none;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 1000px) {
+
+  .div-submit button, .form-groupp label, .form-groupp select {
+    font-size: 12px;
+  }
+  .form-groupp span{
+    font-size: 10px;
+  }
+}

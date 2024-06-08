@@ -1,0 +1,32 @@
+main{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../../assets/images/Home.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+  }
+  .buttonButtomm{
+    text-align: center;
+  }
+ @media (max-width: 800px) {
+  .buttonButtomm{
+    margin-top: -80% ;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+  }
+ }
+
+ @media (max-width: 600px) {
+  .buttonButtomm{
+    margin-top: -700px ;
+  }}
+
+  @media (max-width: 480px) {
+    .buttonButtomm{
+      margin-top: -550px ;
+    }}

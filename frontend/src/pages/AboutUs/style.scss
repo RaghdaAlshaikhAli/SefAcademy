@@ -1,0 +1,13 @@
+.Slider_Content{
+    width: 80%;
+    margin: 12% auto 0;
+    text-align: center;
+    .about_title{
+        padding: 0 0 5%;
+    }
+}
+@media (max-width: 100px) {
+    .Slider_Content{
+        margin: 60% auto 0;
+    }    
+  }

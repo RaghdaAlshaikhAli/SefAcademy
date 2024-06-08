@@ -1,0 +1,36 @@
+.about_card {
+    width: 70%;
+    height: 100%;
+    margin: auto;
+    overflow: hidden;
+    margin-bottom: 15%;
+  }
+  
+  .about_card .img_card {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .swiper-pagination {
+    // تنسيق الترقيم الغير محدد
+    .swiper-pagination-bullet:not(.swiper-pagination-bullet-active) {
+      background-color: #fff;
+      width: 10px;
+      height: 10px;
+      margin: 0 8px;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+  
+    // تنسيق الترقيم المحدد
+    .swiper-pagination-bullet-active {
+      background-color: #FFB606;
+      width: 10px;
+      height: 10px;
+      margin: 0 8px;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+  }
+  

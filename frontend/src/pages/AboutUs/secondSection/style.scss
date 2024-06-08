@@ -1,0 +1,88 @@
+ .Second_Section-contnent{
+    width: 80%;
+    margin: 70px auto 50px;
+    text-align: center;
+}
+.team_Section{
+    width: 80%;
+    height: 10%;
+    margin: 0% auto 5%;
+    text-align: center;
+}
+.about_title{
+    color: #fff;
+    font-size: 20px;
+    padding: 2% 0;
+    font-size: 25px;
+}
+.aboutus_p{
+    color: #c9c9c9;
+    font-size: 15px;
+}
+@media (max-width: 320px) {
+  .aboutus_p {
+    font-size: 12px;
+  }
+}
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20%, 1fr)); /* تقسيم العرض بنسب متساوية على 4 أعمدة */
+    grid-gap: 1.5%;
+    width: 80%;
+    margin: auto;
+  }
+  .grid-container2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+    grid-gap: 10px;
+    width: 80%;
+    margin: 8% auto;
+  }
+  
+  .grid-container33 {
+    width: 80%;
+    margin: 10% auto;
+    border-style: solid;
+    border-width: 0px 0px 1px 0px;
+    border-color: #EDEDED;
+    padding-bottom: 5%;
+  }
+ 
+  @media (max-width: 1000px) {
+    .grid-container2 {
+      grid-template-columns: repeat(auto-fit, minmax(100%, 1fr)) !important;
+      margin: 25% auto;
+    }
+  }
+
+.grid-container .grid-item2 p {
+    color: #707B8F !important;
+    font-size: 18px !important;
+    font-weight: 300;
+}
+  @media (max-width: 1024px) {
+    .grid-container {
+      grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+    }
+  }
+
+  .grid-container .grid-item2:hover{
+    box-shadow: none !important;
+
+  }
+  .grid-container .grid-item:nth-child(1):hover {
+    box-shadow: 0 4px 2px -2px #7BC669 !important;
+    transition: box-shadow 0.5s ease;
+}
+.grid-container .grid-item:nth-child(2):hover {
+  box-shadow: 0 4px 2px -2px #4489F3 !important;
+  transition: box-shadow 0.5s ease;
+}
+.grid-container .grid-item:nth-child(3):hover {
+  box-shadow: 0 4px 2px -2px #FFB606 !important;
+  transition: box-shadow 0.5s ease;
+}
+.grid-container .grid-item:nth-child(4):hover {
+  box-shadow: 0 4px 2px -2px #ED7459 !important;
+  transition: box-shadow 0.5s ease;
+}

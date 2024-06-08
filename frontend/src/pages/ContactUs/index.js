@@ -23,26 +23,26 @@ const ContactUs = () => {
       <Content content={"CONTACT US"} backgroundImage={contactus} />
       <div className="grid-container2 grid-container-second">
         <div className="grid-item grid-item-contact">
-          <img src={contactInfo} className="iconContact" alt="Image" />
+          <img src={contactInfo} className="iconContact" alt="contactInfo" />
           <h2 className="icon_title">Contact info</h2>
           <div className="contact_div">
-            <img className="Contact_img_tel" src={telephone} alt="Image" />
-            <a href="tel:+201555177645" className="contact_a" target="_blank">
+            <img className="Contact_img_tel" src={telephone} alt="telephone" />
+            <a href="tel:+201555177645" className="contact_a" target="_blank" rel="noreferrer">
               201555177645
             </a>
           </div>
           <div className="contact_div">
-            <img className="Contact_img_tel" src={telephone} alt="Image" />
-            <a href="tel:+201097629509" className="contact_a" target="_blank">
+            <img className="Contact_img_tel" src={telephone} alt="telephone" />
+            <a href="tel:+201097629509" className="contact_a" target="_blank" rel="noreferrer">
               201097629509
             </a>
           </div>
           <div className="contact_div">
-            <img className="Contact_img_tel" src={email} alt="Image" />
+            <img className="Contact_img_tel" src={email} alt="email" />
             <a
               href="email:support@sefacademy.com"
               className="contact_a"
-              target="_blank"
+              target="_blank" rel="noreferrer"
             >
               support@sefacademy.com
             </a>
@@ -50,7 +50,7 @@ const ContactUs = () => {
         </div>
 
         <div className="grid-item grid-item-contact">
-          <img src={whatsapp} className="iconContact" alt="Image" />
+          <img src={whatsapp} className="iconContact" alt="whatsapp" />
           <h2 className="icon_title">WhatsApp</h2>
           <div className="Buttons">
             <a className="Two_button button_Contact" onClick={openWhatsApp}>
@@ -90,7 +90,7 @@ const ContactUs = () => {
           </div>
         </div>
         <div className="grid-item grid-item-contact">
-          <img src={Map} className="iconContact" alt="Image" />
+          <img src={Map} className="iconContact" alt="Map" />
           <h2 className="icon_title">Address Way​</h2>
           <p className="cairo">Cairo , Egypt</p>
         </div>

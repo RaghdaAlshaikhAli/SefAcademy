@@ -74,21 +74,21 @@ const Counter = () => {
         transition={{ duration: 0.5, delay: 0.5 }}
         ref={counterRef}
       >
-        <img src={global} alt="Image" />
+        <img src={global} alt="global" />
         <h2 className="green num" data-val="94532">
           0
         </h2>
         <p>Foreign Followers</p>
       </motion.div>
       <div className="grid-item grid-item2">
-        <img src={blackboard} alt="Image" />
+        <img src={blackboard} alt="blackboard" />
         <h2 className="blue num" data-val="11223">
           0
         </h2>
         <p>Classes Complete</p>
       </div>
       <div className="grid-item grid-item2">
-        <img src={study} alt="Image" />
+        <img src={study} alt="study" />
         <h2 className="yellow num" data-val="25678">
           0
         </h2>
@@ -101,7 +101,7 @@ const Counter = () => {
         transition={{ duration: 0.5, delay: 0.5 }}
         ref={lastItemRef}
       >
-        <img src={board} alt="Image" />
+        <img src={board} alt="board" />
         <h2 className="red num" data-val="2678">
           0
         </h2>

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Route, Router, Routes, useLocation } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 import { Result, Home, ContactUs, AboutUs, AddNew } from "../pages";
 import TopButton from "../components/TopScrollButton";
 import Announcement from "../components/Announcement";

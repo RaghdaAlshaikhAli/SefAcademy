@@ -13,7 +13,7 @@ import { useNavigate } from "react-router-dom";
 
 const Sidebar = () => {
   const [show, setShow] = useState(false);
-  const { isAuthenticated, setIsAuthenticated } = useContext(Context); // تحديث لاستخدام role
+  const { isAuthenticated, setIsAuthenticated, admin } = useContext(Context); // تحديث لاستخدام role
   const navigateTo = useNavigate();
 
   const handleLogout = async () => {
@@ -65,9 +65,13 @@ const Sidebar = () => {
         <div className="links">
           <TiHome onClick={gotoHomePage} title="Home" />
           <FaCircleUser onClick={gotoStudentsPage} title="Students" />
-          <MdAddModerator onClick={gotoAddNewAdmin} title="Add Admin" />
+          {admin.role === 'SuperAdmin' && (
+            <MdAddModerator onClick={gotoAddNewAdmin} title="Add Admin" />
+          )}
           <IoPersonAddSharp onClick={gotoAddNewStudent} title="Add Student" />
+          {admin.role === 'SuperAdmin' && (
           <FaHouseUser onClick={gotoRequestsPage} title="Admins" />
+        )}
           <RiLogoutBoxFill onClick={handleLogout} title="Logout" />
         </div>
       </nav>

@@ -18,8 +18,8 @@ const Sidebar = () => {
 
   const handleLogout = async () => {
     await axios
-    .get("http://localhost:4000/api/v1/users/superadmin/logout", {
-      withCredentials: true,
+      .get("http://localhost:4000/api/v1/users/superadmin/logout", {
+        withCredentials: true,
       })
       .then((res) => {
         toast.success(res.data.message);
@@ -65,7 +65,7 @@ const Sidebar = () => {
         <div className="links">
           <TiHome onClick={gotoHomePage} title="Home" />
           <FaCircleUser onClick={gotoStudentsPage} title="Students" />
-            <MdAddModerator onClick={gotoAddNewAdmin} title="Add Admin" />
+          <MdAddModerator onClick={gotoAddNewAdmin} title="Add Admin" />
           <IoPersonAddSharp onClick={gotoAddNewStudent} title="Add Student" />
           <FaHouseUser onClick={gotoRequestsPage} title="Admins" />
           <RiLogoutBoxFill onClick={handleLogout} title="Logout" />
@@ -76,7 +76,6 @@ const Sidebar = () => {
         style={!isAuthenticated ? { display: "none" } : { display: "flex" }}
       >
         <GiHamburgerMenu className="hamburger" onClick={() => setShow(!show)} />
-      
       </div>
     </>
   );

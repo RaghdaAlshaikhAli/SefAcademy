@@ -25,9 +25,9 @@ const Dashboard = () => {
         setRequests(data.requests);
         setCurrentPage(data.currentPage);
         setTotalPages(data.totalPages);
-        if (data.requests.length === 0) {
-          toast.error("No Requests Found!");
-        }
+        // if (data.requests.length === 0) {
+        //   toast.error("No Requests Found!");
+        // }
       } else {
         toast.error("Unexpected response format");
       }
